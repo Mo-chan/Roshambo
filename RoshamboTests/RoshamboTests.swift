@@ -2,12 +2,12 @@
 //  RoshamboTests.swift
 //  RoshamboTests
 //
-//  Created by Chrisna Aing on 2/21/15.
-//  Copyright (c) 2015 Chrisna Aing. All rights reserved.
+//  Created by Mohammad Awwad on 10/25/16.
+//  Copyright © 2016 awwadeto. All rights reserved.
 //
 
-import UIKit
 import XCTest
+@testable import Roshambo
 
 class RoshamboTests: XCTestCase {
     
@@ -23,12 +23,12 @@ class RoshamboTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock() {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }

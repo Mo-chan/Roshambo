@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0710"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "99B16FDC1A99800700F9704B"
+               BlueprintIdentifier = "467BB7701DBF309500D6351C"
                BuildableName = "Roshambo.app"
                BlueprintName = "Roshambo"
-               ReferencedContainer = "container:Roshambo.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "99B16FF11A99800700F9704B"
-               BuildableName = "RoshamboTests.xctest"
-               BlueprintName = "RoshamboTests"
                ReferencedContainer = "container:Roshambo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +32,19 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "99B16FF11A99800700F9704B"
+               BlueprintIdentifier = "467BB7871DBF309600D6351C"
                BuildableName = "RoshamboTests.xctest"
                BlueprintName = "RoshamboTests"
+               ReferencedContainer = "container:Roshambo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "467BB7921DBF309600D6351C"
+               BuildableName = "RoshamboUITests.xctest"
+               BlueprintName = "RoshamboUITests"
                ReferencedContainer = "container:Roshambo.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -56,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "99B16FDC1A99800700F9704B"
+            BlueprintIdentifier = "467BB7701DBF309500D6351C"
             BuildableName = "Roshambo.app"
             BlueprintName = "Roshambo"
             ReferencedContainer = "container:Roshambo.xcodeproj">
@@ -79,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "99B16FDC1A99800700F9704B"
+            BlueprintIdentifier = "467BB7701DBF309500D6351C"
             BuildableName = "Roshambo.app"
             BlueprintName = "Roshambo"
             ReferencedContainer = "container:Roshambo.xcodeproj">
@@ -98,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "99B16FDC1A99800700F9704B"
+            BlueprintIdentifier = "467BB7701DBF309500D6351C"
             BuildableName = "Roshambo.app"
             BlueprintName = "Roshambo"
             ReferencedContainer = "container:Roshambo.xcodeproj">

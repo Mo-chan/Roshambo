@@ -2,25 +2,21 @@
 //  ResultsViewController.swift
 //  Roshambo
 //
+//  Created by Mohammad Awwad on 10/25/16.
+//  Copyright © 2016 awwadeto. All rights reserved.
+//
 
+import Foundation
 import UIKit
 
+class ResultsViewController : UIViewController {
 
-class ResultsViewController: UIViewController {
-
-    // MARK: - Outlets
-
-    @IBOutlet private weak var resultImage: UIImageView!
-    @IBOutlet private weak var resultLabel: UILabel!
-
-    // MARK: - Choices
-    
+    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var resultImage: UIImageView!
     var userChoice: String!
     var opponentChoice: String!
-
-    // MARK: - View Lifecycle Methods
-
-    override func viewWillAppear(animated: Bool) {
+    
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         // Generate a random choice for the oponent
@@ -30,17 +26,17 @@ class ResultsViewController: UIViewController {
         
         displayResult()
     }
-
+    
     // MARK: - UI
-
+    
     // The displayResult method generates the image and message for the results of a match.
     
     private func displayResult() {
-
-        var imageName: String
-        var text: String
+        
+        var imageName = ""
+        var text : String
         var youWon: Bool = false
-        let matchup = "\(userChoice) vs. \(opponentChoice)"
+        let matchup = "\(userChoice!) vs. \(opponentChoice!)"
         
         // Handle the tie
         if userChoice == opponentChoice {
@@ -48,27 +44,27 @@ class ResultsViewController: UIViewController {
             resultLabel.text = "\(matchup): it's a tie!"
             return
         }
-
+        
         // Otherwise, figure out if you won
         switch (userChoice) {
             
         case "Rock":
             youWon = opponentChoice == "Scissors"
-        
+            
         case "Paper":
             youWon = opponentChoice == "Rock"
             
         default: // Scissors
             youWon = opponentChoice == "Paper"
         }
-
+        
         // Create the text
         if youWon {
             text = "You Won! \(matchup)"
-            imageName = "\(userChoice)-\(opponentChoice)".lowercaseString
+            imageName = "\(userChoice!)-\(opponentChoice!)".lowercased()
         } else {
             text = "You Lost! \(matchup)"
-            imageName = "\(opponentChoice)-\(userChoice)".lowercaseString
+            imageName = "\(opponentChoice!)-\(userChoice!)".lowercased()
         }
         
         // Update the UI components
@@ -76,11 +72,7 @@ class ResultsViewController: UIViewController {
         resultLabel.text = text
     }
 
-    // When the user wants to play again, we want to dismiss the current view
-    // controller (this resutls view controller) so that the choice view controller
-    // is expsed, and the player can choose again. 
-    
-    @IBAction private func playAgain() {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func playAgain(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
 }
